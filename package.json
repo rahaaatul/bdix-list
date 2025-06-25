@@ -1,0 +1,44 @@
+{
+  "name": "bdix-list",
+  "version": "1.0.0",
+  "description": "A comprehensive tool for testing BDIX (Bangladesh Internet Exchange) network connectivity and discovering working local servers",
+  "private": true,
+  "scripts": {
+    "start": "bun run simple-ping.ts",
+    "ping": "bun run list.ts",
+    "dev": "bun run list.ts",
+    "fast": "bun run simple-ping.ts",
+    "test": "bun run simple-ping.ts",
+    "list-up": "bun run list-up.ts",
+    "find-working": "bun run list-up.ts",
+    "detailed": "bun run list.ts",
+    "quick": "bun run simple-ping.ts",
+    "analyze": "bun run list.ts"
+  },
+  "keywords": [
+    "bdix",
+    "bangladesh",
+    "internet",
+    "connectivity",
+    "ping",
+    "network",
+    "ftp",
+    "servers",
+    "testing"
+  ],
+  "author": "Bayazid Ahmed",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/ping": "^0.4.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "ping": "^0.4.4"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
